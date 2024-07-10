@@ -1,0 +1,8 @@
+public Course clone() {
+Course c = null;
+try {
+c = (Course)super.clone();
+} catch (CloneNotSupportedException e) {} // Не произойдет
+
+return c;
+}
